@@ -52,9 +52,9 @@ namespace GepteremProjekt
             return Math.Round((egyesDB * 1 + kettesDB * 2 + harmasDB * 3) / (ertekeles.Length - nullaDB), 1);
 
         }
-        public void UjErt(int utca, int haz)
+        public void UjErt(int sor, int hely)
         {
-            ertekeles[utca, haz] = (ertekeles[utca, haz] == 3) ? 0 : ++ertekeles[utca, haz];
+            ertekeles[sor, hely] = (ertekeles[sor, hely] == 3) ? 0 : ++ertekeles[sor, hely];
         }
 
         public int[,] Ertekeles { get => ertekeles; set => ertekeles = value; }
